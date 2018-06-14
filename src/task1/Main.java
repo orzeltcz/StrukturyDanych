@@ -1,7 +1,6 @@
 package task1;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -32,10 +31,17 @@ public class Main {
         listOfTables.add(23);
         listOfTables.add(11);
         listOfTables.add(14);
-        System.out.println(listOfTables.get(1)+"\n");
-        listOfTables.remove(1);
+        int a = listOfTables.size()/2;
+        System.out.println(a);
+        System.out.println(listOfTables.get(a)+"\n");
+        listOfTables.remove(a);
         for (Integer i : listOfTables) {
             System.out.println(i+" ");
+        }
+        Random random = new Random();
+        List<Integer> randomList = new LinkedList<>();
+        for (int i = 0; i < 100; i++) {
+            randomList.add(random.nextInt(10));
         }
     }
 }
