@@ -6,13 +6,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Country {
-
+    private String countryName;
     private List<City> cities = new ArrayList<>();
 
 
 
     public void setCities(City ct) {
         cities.add(ct);
+        this.countryName = ct.getCountry();
     }
 
 

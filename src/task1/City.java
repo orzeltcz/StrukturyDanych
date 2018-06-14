@@ -6,7 +6,8 @@ public class City {
     private String state;
     private String country;
 
-    public City(String name, Integer amountOfCitizens, String state, String country) {
+    public City(String name, Integer amountOfCitizens, String state, String country) throws Exception {
+        if(name.equals("")) throw new Exception();
         this.name = name;
         this.amountOfCitizens = amountOfCitizens;
         this.state = state;
