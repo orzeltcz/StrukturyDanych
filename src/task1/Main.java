@@ -1,8 +1,7 @@
 package task1;
 
 import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Paths;
+import java.nio.file.*;
 import java.util.*;
 
 public class Main {
@@ -85,6 +84,5 @@ public class Main {
         System.out.println(aa);
 
             Files.write(Paths.get("stos-out.txt"), aa.getBytes());
-
     }
 }
