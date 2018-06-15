@@ -29,7 +29,7 @@ public class Propert {
                 System.out.println(enumeration.nextElement().toString());
             }
             properties.setProperty("newkey", "" + "bbbbb");
-            properties.store(fw, "new Property");
+            properties.store(fw, null);
            fw.close();
 
         } catch (IOException e) {
