@@ -1,6 +1,6 @@
 package task1;
 
-public class City {
+public class City implements Comparable<City> {
    private String name;
     private Integer amountOfCitizens;
     private String state;
@@ -44,5 +44,10 @@ public class City {
 
     public void setState(String state) {
         this.state = state;
+    }
+
+    @Override
+    public int compareTo(City o) {
+        return o.getName().compareTo(this.getName());
     }
 }

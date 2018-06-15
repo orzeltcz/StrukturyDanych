@@ -17,7 +17,7 @@ public class DateAndTime {
         cd.add(10,1);
         System.out.println(dt.format(cd.getTime()));
         DateFormat.getDateInstance(DateFormat.SHORT, Locale.ENGLISH);
-        System.out.println(DateFormat.getDateInstance(DateFormat.FULL, Locale.CHINA).format(date));
+        System.out.println(DateFormat.getDateInstance(DateFormat.FULL, Locale.FRANCE).format(date));
 
     }
 }
